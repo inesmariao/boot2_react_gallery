@@ -1,9 +1,14 @@
 import covenas4 from '../assets/img/covenas4.jpg'
+import PropTypes from 'prop-types';
 
-export const Covenas4 = () => {
+export const Covenas4 = ( {className} ) => {
   return (
-    <div>
-      <img src={covenas4} alt="Paisaje de Coveñas, Sucre" />
+    <div className={`image-container ${className}`}>
+      <img src={covenas4} alt="Paisaje de Coveñas, Sucre" className="image" />
     </div>
   )
 }
+
+Covenas4.propTypes = {
+  className: PropTypes.string
+};
