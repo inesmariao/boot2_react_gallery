@@ -17,15 +17,19 @@ function App() {
         <div>
           <h1 id="title" className='text-center my-3'>Proyecto Galería</h1>
         </div>
-        <Routes>
-          <Route path="/covenas1" element={<Covenas1 className='image-size'/>} />
-          <Route path="/covenas2" element={<Covenas2 className='image-size'/>} />
-          <Route path="/covenas3" element={<Covenas3 className='image-size'/>} />
-          <Route path="/covenas4" element={<Covenas4 className='image-size'/>} />
-          <Route path="/covenas5" element={<Covenas5 className='image-size'/>} />
-          <Route path="/covenas6" element={<Covenas6 className='image-size'/>} />
-        </Routes>
-        <Navigation />
+        <div id='main-img-container' className='container'>
+          <Routes>
+            <Route path="/covenas1" element={<Covenas1 className='image-size'/>} />
+            <Route path="/covenas2" element={<Covenas2 className='image-size'/>} />
+            <Route path="/covenas3" element={<Covenas3 className='image-size'/>} />
+            <Route path="/covenas4" element={<Covenas4 className='image-size'/>} />
+            <Route path="/covenas5" element={<Covenas5 className='image-size'/>} />
+            <Route path="/covenas6" element={<Covenas6 className='image-size'/>} />
+          </Routes>
+        </div>
+        <div className='container'>
+          <Navigation />
+        </div>
       </BrowserRouter>
     </>
   )
